@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayan Kumar Chandra — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Particle Canvas -->
+  <canvas id="particles" class="particles-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>
+      <span class="logo-name">AKC</span>
+      <span class="logo-bracket">/&gt;</span>
+    </div>
+    <div class="nav-toggle" id="navToggle">
+      <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+      <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+      <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+      <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+      <li><a href="#github" class="nav-link" data-section="github">GitHub</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ═══════════════════════════════════ HERO ═══════════════════════════════════ -->
+  <section id="home" class="section hero-section">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="tag-dot"></span>
+        <span>Available for opportunities</span>
+      </div>
+      <div class="hero-glitch-wrapper">
+        <h1 class="hero-name" data-text="Ayan Kumar Chandra">Ayan Kumar Chandra</h1>
+      </div>
+      <div class="hero-role-wrapper">
+        <span class="hero-role-prefix">I am a </span>
+        <span class="hero-role-text" id="roleText"></span>
+        <span class="hero-cursor-blink">_</span>
+      </div>
+      <p class="hero-tagline">
+        Building the future at the intersection of <em>code</em>, <em>design</em>, and <em>intelligence</em>.
+      </p>
+      <div class="hero-meta">
+        <span class="meta-item"><i class="fas fa-graduation-cap"></i> Jadavpur University · IT · 1st Year</span>
+        <span class="meta-sep">·</span>
+        <span class="meta-item"><i class="fas fa-map-marker-alt"></i> West Bengal, India</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          <span>View My Work</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="resume.pdf" download class="btn btn-outline">
+          <i class="fas fa-download"></i>
+          <span>Download CV</span>
+        </a>
+        <a href="#contact" class="btn btn-ghost">
+          <i class="fas fa-envelope"></i>
+          <span>Contact Me</span>
+        </a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/" target="_blank" class="social-link" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/" target="_blank" class="social-link" title="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:ayan@email.com" class="social-link" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-avatar-ring">
+        <div class="ring ring-1"></div>
+        <div class="ring ring-2"></div>
+        <div class="ring ring-3"></div>
+        <div class="avatar-core photo">
+          <img src="ayan-photo.jpg" alt="Ayan Kumar Chandra" class="avatar-photo" />
+          <div class="avatar-status">
+            <span class="status-dot"></span>Online
+          </div>
+        </div>
+      </div>
+      <div class="floating-badge badge-1"><i class="fas fa-code"></i> Full Stack</div>
+      <div class="floating-badge badge-2"><i class="fas fa-brain"></i> AI / ML</div>
+      <div class="floating-badge badge-3"><i class="fas fa-database"></i> DSA</div>
+      <div class="floating-badge badge-4"><i class="fas fa-palette"></i> Design</div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════ ABOUT ═══════════════════════════════════ -->
+  <section id="about" class="section about-section">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <h2 class="section-title">About Me</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-container">
+      <div class="about-left">
+        <div class="about-card glass-card">
+          <div class="about-card-header">
+            <span class="card-tag">// who_am_i</span>
+          </div>
+          <p class="about-text">
+            I'm a <strong>first-year Information Technology</strong> student at Jadavpur University with a strong foundation in programming and problem-solving.
+          </p>
+          <p class="about-text">
+            My journey spans from low-level systems with <strong>C/C++</strong> and <strong>Java</strong>, through <strong>Data Structures & Algorithms</strong>, all the way to building beautiful user interfaces with <strong>React</strong>.
+          </p>
+          <p class="about-text">
+            I'm also actively exploring the world of <strong>AI/ML</strong>, leveraging my mathematical background to grasp complex concepts and apply them to real-world problems. I believe in building things that are not just functional — but elegant.
+          </p>
+          <div class="about-quick-facts">
+            <div class="fact-item">
+              <span class="fact-label">Location</span>
+              <span class="fact-value">West Bengal, India</span>
+            </div>
+            <div class="fact-item">
+              <span class="fact-label">University</span>
+              <span class="fact-value">Jadavpur University</span>
+            </div>
+            <div class="fact-item">
+              <span class="fact-label">Degree</span>
+              <span class="fact-value">B.Tech in IT</span>
+            </div>
+            <div class="fact-item">
+              <span class="fact-label">Year</span>
+              <span class="fact-value">1st Year (2024–2028)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="stats-grid">
+          <div class="stat-card glass-card">
+            <div class="stat-number" data-target="3">0</div>
+            <div class="stat-label">Projects Built</div>
+            <div class="stat-icon"><i class="fas fa-rocket"></i></div>
+          </div>
+          <div class="stat-card glass-card">
+            <div class="stat-number" data-target="8">0</div>
+            <div class="stat-label">Technologies</div>
+            <div class="stat-icon"><i class="fas fa-layer-group"></i></div>
+          </div>
+          <div class="stat-card glass-card">
+            <div class="stat-number" data-target="1">0</div>
+            <div class="stat-label">Hackathon</div>
+            <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+          </div>
+          <div class="stat-card glass-card">
+            <div class="stat-number" data-target="100">0</div>
+            <div class="stat-label">% Passion</div>
+            <div class="stat-icon"><i class="fas fa-heart"></i></div>
+          </div>
+        </div>
+        <div class="interests-card glass-card">
+          <h3 class="interests-title">// current_focus</h3>
+          <div class="interest-tags">
+            <span class="i-tag">🤖 Machine Learning</span>
+            <span class="i-tag">⚛️ React Ecosystem</span>
+            <span class="i-tag">🌐 Full Stack Dev</span>
+            <span class="i-tag">📐 DSA Mastery</span>
+            <span class="i-tag">🎨 UI/UX Design</span>
+            <span class="i-tag">☁️ Cloud & APIs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════ SKILLS ═══════════════════════════════════ -->
+  <section id="skills" class="section skills-section">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <h2 class="section-title">Tech Stack</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-intro">
+      <p>A snapshot of the technologies and tools I work with daily.</p>
+    </div>
+
+    <div class="skills-categories">
+
+      <div class="skill-category glass-card">
+        <div class="cat-header">
+          <i class="fas fa-terminal cat-icon"></i>
+          <h3>Languages</h3>
+        </div>
+        <div class="skill-items">
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">C</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">C++</span>
+              <span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Java</span>
+              <span class="skill-pct">70%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">JavaScript</span>
+              <span class="skill-pct">78%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category glass-card">
+        <div class="cat-header">
+          <i class="fas fa-globe cat-icon"></i>
+          <h3>Web Technologies</h3>
+        </div>
+        <div class="skill-items">
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">HTML5</span>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">CSS3</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">React</span>
+              <span class="skill-pct">72%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category glass-card">
+        <div class="cat-header">
+          <i class="fas fa-brain cat-icon"></i>
+          <h3>AI / ML & Math</h3>
+        </div>
+        <div class="skill-items">
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Machine Learning</span>
+              <span class="skill-pct">60%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Mathematics</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">DSA</span>
+              <span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Icon Badges -->
+    <div class="tech-badges">
+      <div class="badge-item" title="C">
+        <div class="badge-icon">C</div>
+        <span>C</span>
+      </div>
+      <div class="badge-item" title="C++">
+        <div class="badge-icon">C++</div>
+        <span>C++</span>
+      </div>
+      <div class="badge-item" title="Java">
+        <div class="badge-icon"><i class="fab fa-java"></i></div>
+        <span>Java</span>
+      </div>
+      <div class="badge-item" title="HTML5">
+        <div class="badge-icon"><i class="fab fa-html5"></i></div>
+        <span>HTML5</span>
+      </div>
+      <div class="badge-item" title="CSS3">
+        <div class="badge-icon"><i class="fab fa-css3-alt"></i></div>
+        <span>CSS3</span>
+      </div>
+      <div class="badge-item" title="JavaScript">
+        <div class="badge-icon"><i class="fab fa-js"></i></div>
+        <span>JavaScript</span>
+      </div>
+      <div class="badge-item" title="React">
+        <div class="badge-icon"><i class="fab fa-react"></i></div>
+        <span>React</span>
+      </div>
+      <div class="badge-item" title="Git">
+        <div class="badge-icon"><i class="fab fa-git-alt"></i></div>
+        <span>Git</span>
+      </div>
+      <div class="badge-item" title="AI/ML">
+        <div class="badge-icon"><i class="fas fa-robot"></i></div>
+        <span>AI/ML</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════ PROJECTS ═══════════════════════════════════ -->
+  <section id="projects" class="section projects-section">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <h2 class="section-title">Projects</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Project 1: Weather App -->
+      <div class="project-card glass-card">
+        <div class="project-number">01</div>
+        <div class="project-top">
+          <div class="project-icon-wrap">
+            <i class="fas fa-cloud-sun project-icon"></i>
+          </div>
+          <div class="project-links">
+            <a href="#" class="proj-link" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" class="proj-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3 class="project-title">Weather App</h3>
+        <p class="project-desc">
+          A sleek, real-time weather application that fetches live meteorological data using a public API. Features location-based weather, 7-day forecasts, humidity, wind speed, and dynamic animated backgrounds that reflect current conditions.
+        </p>
+        <div class="project-tags">
+          <span class="ptag">HTML</span>
+          <span class="ptag">CSS</span>
+          <span class="ptag">JavaScript</span>
+          <span class="ptag">REST API</span>
+        </div>
+        <div class="project-footer">
+          <span class="project-status status-live">
+            <span class="status-dot-sm"></span> Live
+          </span>
+        </div>
+      </div>
+
+      <!-- Project 2: AI Content Creator -->
+      <div class="project-card glass-card featured">
+        <div class="project-number">02</div>
+        <div class="featured-badge">⭐ Featured</div>
+        <div class="project-top">
+          <div class="project-icon-wrap">
+            <i class="fas fa-robot project-icon"></i>
+          </div>
+          <div class="project-links">
+            <a href="#" class="proj-link" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" class="proj-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3 class="project-title">AI Content Creator Platform</h3>
+        <p class="project-desc">
+          A subscription-based AI platform designed to empower content creators. Leverages large language models to generate scripts, captions, blog posts, and social media content — all personalized to the creator's voice and niche.
+        </p>
+        <div class="project-tags">
+          <span class="ptag">React</span>
+          <span class="ptag">AI / LLM</span>
+          <span class="ptag">Node.js</span>
+          <span class="ptag">Subscription</span>
+        </div>
+        <div class="project-footer">
+          <span class="project-status status-dev">
+            <span class="status-dot-sm"></span> In Development
+          </span>
+        </div>
+      </div>
+
+      <!-- Project 3: Hackathon Website -->
+      <div class="project-card glass-card">
+        <div class="project-number">03</div>
+        <div class="project-top">
+          <div class="project-icon-wrap">
+            <i class="fas fa-bolt project-icon"></i>
+          </div>
+          <div class="project-links">
+            <a href="#" class="proj-link" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" class="proj-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3 class="project-title">Hackathon Team Website</h3>
+        <p class="project-desc">
+          Designed and built a dynamic, visually striking website for our hackathon team. Features team member profiles, project showcase, timeline, and a submission portal — all crafted with pixel-perfect UI and smooth animations.
+        </p>
+        <div class="project-tags">
+          <span class="ptag">HTML</span>
+          <span class="ptag">CSS</span>
+          <span class="ptag">JavaScript</span>
+          <span class="ptag">UI Design</span>
+        </div>
+        <div class="project-footer">
+          <span class="project-status status-live">
+            <span class="status-dot-sm"></span> Live
+          </span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="projects-cta">
+      <a href="https://github.com/" target="_blank" class="btn btn-outline">
+        <i class="fab fa-github"></i>
+        <span>See All on GitHub</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════ GITHUB ═══════════════════════════════════ -->
+  <section id="github" class="section github-section">
+    <div class="section-header">
+      <span class="section-number">04</span>
+      <h2 class="section-title">GitHub Activity</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="github-container">
+
+      <div class="github-profile-card glass-card">
+        <div class="gh-avatar">
+          <i class="fab fa-github"></i>
+        </div>
+        <div class="gh-info">
+          <h3>@ayan-kumar-chandra</h3>
+          <p>Building cool things, one commit at a time.</p>
+          <div class="gh-stats-row">
+            <div class="gh-stat">
+              <span class="gh-num">3+</span>
+              <span class="gh-lbl">Repos</span>
+            </div>
+            <div class="gh-stat">
+              <span class="gh-num">∞</span>
+              <span class="gh-lbl">Commits</span>
+            </div>
+            <div class="gh-stat">
+              <span class="gh-num">1st</span>
+              <span class="gh-lbl">Year</span>
+            </div>
+          </div>
+          <a href="https://github.com/" target="_blank" class="btn btn-outline btn-sm">
+            <i class="fab fa-github"></i> Visit Profile
+          </a>
+        </div>
+      </div>
+
+      <!-- Contribution Graph Visual -->
+      <div class="contribution-card glass-card">
+        <h3 class="gh-card-title">// contribution_graph</h3>
+        <div class="contribution-graph" id="contribGraph"></div>
+        <div class="contrib-legend">
+          <span>Less</span>
+          <span class="cl-box cl-0"></span>
+          <span class="cl-box cl-1"></span>
+          <span class="cl-box cl-2"></span>
+          <span class="cl-box cl-3"></span>
+          <span class="cl-box cl-4"></span>
+          <span>More</span>
+        </div>
+      </div>
+
+      <!-- GitHub Stats Cards -->
+      <div class="github-stats-grid">
+        <div class="gh-stat-card glass-card">
+          <h3>// top_languages</h3>
+          <div class="lang-bars">
+            <div class="lang-bar-item">
+              <div class="lang-info">
+                <span class="lang-dot" style="background:#00fff0"></span>
+                <span>JavaScript</span>
+                <span class="lang-pct">35%</span>
+              </div>
+              <div class="lang-bar-bg"><div class="lang-bar-fill" style="width:35%; background:#00fff0"></div></div>
+            </div>
+            <div class="lang-bar-item">
+              <div class="lang-info">
+                <span class="lang-dot" style="background:#f0a30a"></span>
+                <span>C++</span>
+                <span class="lang-pct">25%</span>
+              </div>
+              <div class="lang-bar-bg"><div class="lang-bar-fill" style="width:25%; background:#f0a30a"></div></div>
+            </div>
+            <div class="lang-bar-item">
+              <div class="lang-info">
+                <span class="lang-dot" style="background:#e34c26"></span>
+                <span>HTML</span>
+                <span class="lang-pct">20%</span>
+              </div>
+              <div class="lang-bar-bg"><div class="lang-bar-fill" style="width:20%; background:#e34c26"></div></div>
+            </div>
+            <div class="lang-bar-item">
+              <div class="lang-info">
+                <span class="lang-dot" style="background:#61dafb"></span>
+                <span>React/JSX</span>
+                <span class="lang-pct">15%</span>
+              </div>
+              <div class="lang-bar-bg"><div class="lang-bar-fill" style="width:15%; background:#61dafb"></div></div>
+            </div>
+            <div class="lang-bar-item">
+              <div class="lang-info">
+                <span class="lang-dot" style="background:#b07219"></span>
+                <span>Java</span>
+                <span class="lang-pct">5%</span>
+              </div>
+              <div class="lang-bar-bg"><div class="lang-bar-fill" style="width:5%; background:#b07219"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gh-stat-card glass-card">
+          <h3>// pinned_repos</h3>
+          <div class="pinned-repos">
+            <div class="pinned-repo">
+              <div class="repo-header">
+                <i class="fas fa-book-open"></i>
+                <span class="repo-name">weather-app</span>
+              </div>
+              <p class="repo-desc">Real-time weather with beautiful UI</p>
+              <div class="repo-meta">
+                <span><i class="fas fa-circle" style="color:#f0db4f"></i> JS</span>
+                <span><i class="fas fa-star"></i> 2</span>
+                <span><i class="fas fa-code-branch"></i> 1</span>
+              </div>
+            </div>
+            <div class="pinned-repo">
+              <div class="repo-header">
+                <i class="fas fa-book-open"></i>
+                <span class="repo-name">ai-content-platform</span>
+              </div>
+              <p class="repo-desc">AI subscription platform for creators</p>
+              <div class="repo-meta">
+                <span><i class="fas fa-circle" style="color:#61dafb"></i> React</span>
+                <span><i class="fas fa-star"></i> 5</span>
+                <span><i class="fas fa-code-branch"></i> 2</span>
+              </div>
+            </div>
+            <div class="pinned-repo">
+              <div class="repo-header">
+                <i class="fas fa-book-open"></i>
+                <span class="repo-name">hackathon-site</span>
+              </div>
+              <p class="repo-desc">Hackathon team website with animations</p>
+              <div class="repo-meta">
+                <span><i class="fas fa-circle" style="color:#e34c26"></i> HTML</span>
+                <span><i class="fas fa-star"></i> 3</span>
+                <span><i class="fas fa-code-branch"></i> 1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Resume Download -->
+      <div class="resume-card glass-card">
+        <div class="resume-left">
+          <div class="resume-icon-wrap">
+            <i class="fas fa-file-pdf"></i>
+          </div>
+          <div>
+            <h3>Ayan Kumar Chandra — Resume</h3>
+            <p>Full Stack Developer · IT Student · Jadavpur University</p>
+            <div class="resume-tags">
+              <span>Updated 2025</span>
+              <span>PDF · 1 Page</span>
+            </div>
+          </div>
+        </div>
+        <a href="resume.pdf" download class="btn btn-primary resume-btn">
+          <i class="fas fa-download"></i>
+          <span>Download Resume</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════ CONTACT ═══════════════════════════════════ -->
+  <section id="contact" class="section contact-section">
+    <div class="section-header">
+      <span class="section-number">05</span>
+      <h2 class="section-title">Contact Me</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="contact-container">
+      <div class="contact-left">
+        <div class="contact-intro glass-card">
+          <h3 class="contact-heading">Let's Build Something <span class="highlight">Extraordinary</span></h3>
+          <p class="contact-subtext">
+            Whether you want to collaborate on a project, have an opportunity, or just want to say hello — my inbox is always open. I respond within 24 hours.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:ayan@email.com" class="contact-link-item">
+              <div class="contact-link-icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-link-text">
+                <span class="cl-label">Email</span>
+                <span class="cl-value">ayan@email.com</span>
+              </div>
+              <i class="fas fa-external-link-alt cl-arrow"></i>
+            </a>
+            <a href="https://linkedin.com/" target="_blank" class="contact-link-item">
+              <div class="contact-link-icon linkedin"><i class="fab fa-linkedin-in"></i></div>
+              <div class="contact-link-text">
+                <span class="cl-label">LinkedIn</span>
+                <span class="cl-value">Ayan Kumar Chandra</span>
+              </div>
+              <i class="fas fa-external-link-alt cl-arrow"></i>
+            </a>
+            <a href="https://github.com/" target="_blank" class="contact-link-item">
+              <div class="contact-link-icon github"><i class="fab fa-github"></i></div>
+              <div class="contact-link-text">
+                <span class="cl-label">GitHub</span>
+                <span class="cl-value">@ayan-kumar-chandra</span>
+              </div>
+              <i class="fas fa-external-link-alt cl-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-right">
+        <div class="contact-form-card glass-card">
+          <h3 class="form-title">// send_message</h3>
+          <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required />
+                <div class="input-line"></div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required />
+                <div class="input-line"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What's this about?" required />
+              <div class="input-line"></div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project, idea, or just say hi..." required></textarea>
+              <div class="input-line"></div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span id="submitText">Send Message</span>
+              <i class="fas fa-paper-plane" id="submitIcon"></i>
+            </button>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i>
+            <span>Message sent! I'll get back to you soon.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════ FOOTER ═══════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">AKC</span>
+        <span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-tagline">Ayan Kumar Chandra · Full Stack Developer & Designer</p>
+      <div class="footer-socials">
+        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:ayan@email.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Designed & Built with <span class="heart">♥</span> by Ayan Kumar Chandra</p>
+      <p>© 2025 · All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" title="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script>
+    // ─── Custom Cursor ───────────────────────────────────────────────────────────
+    const cursor = document.getElementById('cursor');
+    const follower = document.getElementById('cursorFollower');
+    let mouseX = 0, mouseY = 0, followerX = 0, followerY = 0;
+    document.addEventListener('mousemove', e => {
+      mouseX = e.clientX; mouseY = e.clientY;
+      cursor.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
+    });
+    function animateFollower() {
+      followerX += (mouseX - followerX) * 0.1;
+      followerY += (mouseY - followerY) * 0.1;
+      follower.style.transform = `translate(${followerX}px, ${followerY}px)`;
+      requestAnimationFrame(animateFollower);
+    }
+    animateFollower();
+    document.querySelectorAll('a, button, .project-card, .skill-item').forEach(el => {
+      el.addEventListener('mouseenter', () => { cursor.classList.add('cursor-hover'); follower.classList.add('follower-hover'); });
+      el.addEventListener('mouseleave', () => { cursor.classList.remove('cursor-hover'); follower.classList.remove('follower-hover'); });
+    });
+
+    // ─── Particle Canvas ─────────────────────────────────────────────────────────
+    const canvas = document.getElementById('particles');
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    let particles = [];
+    function createParticle() {
+      return { x: Math.random()*canvas.width, y: Math.random()*canvas.height, vx: (Math.random()-0.5)*0.4, vy: (Math.random()-0.5)*0.4, size: Math.random()*1.5+0.3, alpha: Math.random()*0.5+0.1 };
+    }
+    for (let i=0; i<120; i++) particles.push(createParticle());
+    function drawParticles() {
+      ctx.clearRect(0,0,canvas.width,canvas.height);
+      particles.forEach(p => {
+        p.x += p.vx; p.y += p.vy;
+        if (p.x<0||p.x>canvas.width) p.vx*=-1;
+        if (p.y<0||p.y>canvas.height) p.vy*=-1;
+        ctx.beginPath();
+        ctx.arc(p.x,p.y,p.size,0,Math.PI*2);
+        ctx.fillStyle = `rgba(0,255,240,${p.alpha})`;
+        ctx.fill();
+      });
+      // Connect close particles
+      for (let i=0;i<particles.length;i++) {
+        for (let j=i+1;j<particles.length;j++) {
+          const dx=particles[i].x-particles[j].x, dy=particles[i].y-particles[j].y;
+          const dist=Math.sqrt(dx*dx+dy*dy);
+          if (dist<100) {
+            ctx.beginPath();
+            ctx.moveTo(particles[i].x,particles[i].y);
+            ctx.lineTo(particles[j].x,particles[j].y);
+            ctx.strokeStyle=`rgba(0,255,240,${0.05*(1-dist/100)})`;
+            ctx.lineWidth=0.5;
+            ctx.stroke();
+          }
+        }
+      }
+      requestAnimationFrame(drawParticles);
+    }
+    drawParticles();
+    window.addEventListener('resize', () => { canvas.width=window.innerWidth; canvas.height=window.innerHeight; });
+
+    // ─── Typewriter ──────────────────────────────────────────────────────────────
+    const roles = ['Full Stack Developer', 'UI/UX Designer', 'AI/ML Explorer', 'Problem Solver', 'IT Student @ JU'];
+    let roleIdx=0, charIdx=0, deleting=false;
+    const roleEl=document.getElementById('roleText');
+    function typeWriter() {
+      const current=roles[roleIdx];
+      if (!deleting) {
+        roleEl.textContent=current.substring(0,charIdx+1);
+        charIdx++;
+        if (charIdx===current.length) { deleting=true; setTimeout(typeWriter,1800); return; }
+      } else {
+        roleEl.textContent=current.substring(0,charIdx-1);
+        charIdx--;
+        if (charIdx===0) { deleting=false; roleIdx=(roleIdx+1)%roles.length; }
+      }
+      setTimeout(typeWriter, deleting?60:90);
+    }
+    typeWriter();
+
+    // ─── Nav Active + Scroll ────────────────────────────────────────────────────
+    const navbar=document.getElementById('navbar');
+    const sections=document.querySelectorAll('.section');
+    const navLinks=document.querySelectorAll('.nav-link');
+    window.addEventListener('scroll', () => {
+      const scrollY=window.scrollY;
+      navbar.classList.toggle('scrolled', scrollY>80);
+      document.getElementById('backToTop').classList.toggle('visible', scrollY>400);
+      let current='home';
+      sections.forEach(s => { if (scrollY >= s.offsetTop-200) current=s.id; });
+      navLinks.forEach(l => l.classList.toggle('active', l.dataset.section===current));
+      animateOnScroll();
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const target=document.querySelector(a.getAttribute('href'));
+        if (target) target.scrollIntoView({behavior:'smooth'});
+        document.getElementById('navLinks').classList.remove('open');
+      });
+    });
+    document.getElementById('navToggle').addEventListener('click', () => {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+    document.getElementById('backToTop').addEventListener('click', () => window.scrollTo({top:0,behavior:'smooth'}));
+
+    // ─── Counter Animation ───────────────────────────────────────────────────────
+    let countersAnimated=false;
+    function animateCounters() {
+      if (countersAnimated) return;
+      const aboutSection=document.getElementById('about');
+      if (!aboutSection) return;
+      const rect=aboutSection.getBoundingClientRect();
+      if (rect.top<window.innerHeight*0.8) {
+        countersAnimated=true;
+        document.querySelectorAll('.stat-number').forEach(el => {
+          const target=+el.dataset.target;
+          let count=0;
+          const step=Math.ceil(target/40);
+          const timer=setInterval(() => {
+            count+=step;
+            if (count>=target) { el.textContent=target+(target===100?'%':''); clearInterval(timer); }
+            else el.textContent=count;
+          }, 40);
+        });
+      }
+    }
+
+    // ─── Skill Bars ──────────────────────────────────────────────────────────────
+    let skillsAnimated=false;
+    function animateSkillBars() {
+      if (skillsAnimated) return;
+      const skillsSection=document.getElementById('skills');
+      if (!skillsSection) return;
+      const rect=skillsSection.getBoundingClientRect();
+      if (rect.top<window.innerHeight*0.85) {
+        skillsAnimated=true;
+        document.querySelectorAll('.skill-fill').forEach(bar => {
+          bar.style.width=bar.dataset.width+'%';
+        });
+      }
+    }
+
+    // ─── Scroll Reveal ───────────────────────────────────────────────────────────
+    function animateOnScroll() {
+      animateCounters();
+      animateSkillBars();
+      document.querySelectorAll('.reveal').forEach(el => {
+        const rect=el.getBoundingClientRect();
+        if (rect.top<window.innerHeight*0.9) el.classList.add('revealed');
+      });
+    }
+    document.querySelectorAll('.glass-card, .project-card, .stat-card, .badge-item').forEach(el => el.classList.add('reveal'));
+    animateOnScroll();
+    window.addEventListener('scroll', animateOnScroll);
+
+    // ─── Contribution Graph ──────────────────────────────────────────────────────
+    const graph=document.getElementById('contribGraph');
+    const levels=[0,1,2,3,4];
+    const weeks=26, days=7;
+    for (let w=0;w<weeks;w++) {
+      const col=document.createElement('div');
+      col.className='contrib-col';
+      for (let d=0;d<days;d++) {
+        const cell=document.createElement('div');
+        const rand=Math.random();
+        let lvl=0;
+        if (rand>0.8) lvl=4;
+        else if (rand>0.6) lvl=3;
+        else if (rand>0.45) lvl=2;
+        else if (rand>0.3) lvl=1;
+        cell.className=`contrib-cell level-${lvl}`;
+        cell.title=`${lvl*3} contributions`;
+        col.appendChild(cell);
+      }
+      graph.appendChild(col);
+    }
+
+    // ─── Form Submit ─────────────────────────────────────────────────────────────
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const btn=e.target.querySelector('button[type="submit"]');
+      btn.disabled=true;
+      btn.querySelector('#submitText').textContent='Sending...';
+      setTimeout(() => {
+        document.getElementById('contactForm').style.display='none';
+        document.getElementById('formSuccess').style.display='flex';
+      }, 1500);
+    }
+  </script>
+</body>
+</html>
