@@ -876,6 +876,31 @@ button { cursor: none; border: none; background: none; }
   color: var(--accent-blue);
   font-family: var(--font-mono);
 }
+.project-features {
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.project-features li {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  padding-left: 18px;
+  position: relative;
+}
+.project-features li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-purple);
+}
 .project-footer { display: flex; align-items: center; justify-content: space-between; }
 .project-status {
   display: flex; align-items: center; gap: 7px;
@@ -883,6 +908,7 @@ button { cursor: none; border: none; background: none; }
 }
 .status-live { color: var(--accent-green); }
 .status-dev { color: var(--accent-gold); }
+.status-started { color: var(--accent-purple); }
 .status-dot-sm {
   width: 6px; height: 6px;
   border-radius: 50%;
@@ -1315,3 +1341,4 @@ button { cursor: none; border: none; background: none; }
   .btn { padding: 11px 20px; font-size: 0.88rem; }
   .section { padding: 60px 18px; }
 }
+
