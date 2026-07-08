@@ -973,51 +973,7 @@ button { cursor: none; border: none; background: none; }
 .gh-lbl { font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 1px; }
 
 /* Contribution Graph */
-.contribution-card { padding: 32px; }
-.gh-card-title {
-  font-family: var(--font-mono);
-  font-size: 0.85rem;
-  color: var(--accent-cyan);
-  margin-bottom: 20px;
-}
-.contribution-graph {
-  display: flex;
-  gap: 3px;
-  overflow-x: auto;
-  padding-bottom: 8px;
-}
-.contrib-col { display: flex; flex-direction: column; gap: 3px; }
-.contrib-cell {
-  width: 13px; height: 13px;
-  border-radius: 2px;
-  cursor: pointer;
-  transition: transform 0.15s;
-}
-.contrib-cell:hover { transform: scale(1.4); }
-.level-0 { background: rgba(255,255,255,0.05); }
-.level-1 { background: rgba(0,255,240,0.2); }
-.level-2 { background: rgba(0,255,240,0.45); }
-.level-3 { background: rgba(0,255,240,0.7); }
-.level-4 { background: var(--accent-cyan); box-shadow: 0 0 6px rgba(0,255,240,0.5); }
 
-.contrib-legend {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 12px;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  color: var(--text-muted);
-}
-.cl-box {
-  width: 12px; height: 12px;
-  border-radius: 2px;
-}
-.cl-0 { background: rgba(255,255,255,0.05); }
-.cl-1 { background: rgba(0,255,240,0.2); }
-.cl-2 { background: rgba(0,255,240,0.45); }
-.cl-3 { background: rgba(0,255,240,0.7); }
-.cl-4 { background: var(--accent-cyan); }
 
 /* GitHub Stats Grid */
 .github-stats-grid {
